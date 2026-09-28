@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vishwa Vignesh S | AI/ML Engineer, in training</title>
+<meta name="description" content="Portfolio of Vishwa Vignesh S, a computer science student focused on predictive models, LLM integrations and data pipelines.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a10;--card:#12111b;--text:#f3f2f9;--muted:#a19eb6;--line:rgba(255,255,255,.09);--acc:#8b7bff;--glow:rgba(139,123,255,.22);--nav:rgba(10,10,16,.85);--grad:linear-gradient(135deg,#4f5bff 0%,#8b6bff 100%)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font:400 16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.wrap{max-width:1000px;margin:auto;padding:0 22px}
+header{position:sticky;top:0;z-index:10;background:var(--nav);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:64px}
+.logo{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.15rem;line-height:1.25;color:var(--text);text-decoration:none;white-space:nowrap}
+nav{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav a{padding:6px 12px;border-radius:99px;color:var(--muted);text-decoration:none;font-size:14px;white-space:nowrap;transition:color .2s,background .2s}
+nav a:hover{color:var(--text)}
+nav a.on{color:var(--text);background:var(--line)}
+section{padding:72px 0;scroll-margin-top:64px;border-bottom:1px solid var(--line)}
+.eyebrow{display:block;color:var(--acc);font-size:13px;margin-bottom:8px}
+h2{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(1.9rem,5.5vw,2.7rem);letter-spacing:-.02em;line-height:1.15;margin-bottom:28px}
+#home{min-height:calc(100svh - 64px);display:flex;align-items:center;padding:56px 0}
+.hero{display:grid;gap:36px;align-items:center;width:100%}
+.tag{display:inline-flex;align-items:center;gap:10px;color:var(--muted);font-size:15px}
+.tag::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--acc)}
+h1{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:clamp(2.6rem,9vw,4.6rem);letter-spacing:-.025em;line-height:1.08;margin:22px 0 24px;max-width:14ch}
+h1 em{color:var(--acc);font-style:italic}
+.sub{font-size:clamp(1rem,2.6vw,1.1rem);color:var(--muted);max-width:56ch;line-height:1.75}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 24px;border-radius:12px;font:600 15px Inter,system-ui,sans-serif;text-decoration:none;border:1px solid var(--line);color:var(--text);overflow-wrap:anywhere;transition:box-shadow .25s,border-color .25s}
+.btn.p{background:var(--acc);color:#0a0a10;border-color:transparent}
+.btn:hover{box-shadow:0 0 30px -6px var(--acc);border-color:var(--acc)}
+.stat-card{background:var(--grad);border-radius:18px;padding:26px;color:#fff}
+.stat-card div+div{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.25)}
+.stat-card small{display:block;font-size:13px;opacity:.85}
+.stat-card strong{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.6rem;line-height:1.3}
+.stat-card .langs{font-size:1.05rem}
+.g{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.g>*{grid-column:span 12}
+.card{border:1px solid var(--line);border-radius:18px;padding:26px;background:var(--card);transition:border-color .3s}
+.card:hover{border-color:rgba(139,123,255,.55)}
+.card h3{font-family:Newsreader,Georgia,serif;font-weight:500;font-size:1.35rem;line-height:1.3;margin-bottom:8px}
+.card p{color:var(--muted)}
+.big{font-family:Newsreader,Georgia,serif;font-size:clamp(1.15rem,3vw,1.4rem);line-height:1.65;color:var(--text)!important}
+.always{display:flex;flex-direction:column;justify-content:center;background:radial-gradient(90% 80% at 100% 100%,var(--glow),transparent 65%),var(--card)}
+.always .word{font-family:Newsreader,Georgia,serif;font-size:1.9rem;color:var(--acc);margin-bottom:8px}
+.always p{font-size:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.chips.top{margin-top:0}
+.chip{padding:8px 16px;border-radius:10px;border:1px solid var(--line);background:var(--bg);font-size:14px}
+.chip.acc{background:rgba(139,123,255,.12);border-color:rgba(139,123,255,.35);color:#b9b0ff;font-size:13px;padding:5px 13px;border-radius:99px}
+.project{display:grid;padding:0;overflow:hidden}
+.project .info{padding:28px}
+.project .term{background:var(--grad);padding:22px;color:#fff;font:13px/1.8 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.project .dots{display:flex;gap:6px;margin-bottom:14px}
+.project .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.55)}
+.project pre{font:inherit;white-space:pre-wrap}
+.edu{display:flex;align-items:center;gap:18px;padding:20px 24px}
+.edu+.edu{margin-top:12px}
+.edu .num{font-family:Newsreader,Georgia,serif;font-size:1.9rem;color:var(--acc);min-width:88px;line-height:1.2}
+.edu h3{font-family:Inter,system-ui,sans-serif;font-size:15px;font-weight:600;margin:0}
+.edu p{font-size:14px}
+.cta{background:var(--grad);border:none;border-radius:20px;padding:36px 28px;color:#fff}
+.cta h2{margin-bottom:14px;max-width:16ch}
+.cta p{color:rgba(255,255,255,.88);max-width:44ch}
+.cta .btn{border-color:rgba(255,255,255,.4);color:#fff}
+.cta .btn.w{background:#fff;color:#1b1b2f;border-color:transparent}
+.cta .btn:hover{box-shadow:0 0 30px -6px #fff;border-color:#fff}
+footer{padding:30px 0 46px;text-align:center;color:var(--muted);font-size:13px}
+@media(min-width:760px){
+.hero{grid-template-columns:1.6fr 1fr}
+.s4{grid-column:span 4}.s6{grid-column:span 6}.s8{grid-column:span 8}
+.project{grid-template-columns:1.1fr 1fr}
+.cta{padding:44px 40px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#home">Vishwa Vignesh</a>
+<nav aria-label="Main">
+<a href="#home">Home</a><a href="#profile">Profile</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+</nav>
+</div></header>
+<main>
+
+<section id="home"><div class="wrap hero">
+<div>
+<span class="tag">AI/ML Engineer, in training</span>
+<h1>I build systems that <em>learn</em>, and code that holds up.</h1>
+<p class="sub">I'm Vishwa Vignesh S — a computer science student focused on predictive models, LLM integrations, and the data pipelines that keep them fed. I like the parts of engineering that don't show up in a demo: clean logic, reliable data, and code a team can actually maintain.</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#projects">See my work</a></div>
+</div>
+<aside class="stat-card" aria-label="Quick facts">
+<div><small>Current CGPA</small><strong>8.61</strong></div>
+<div><small>HSC score</small><strong>97.6%</strong></div>
+<div><small>Core languages</small><strong class="langs">Python · C · C++</strong></div>
+</aside>
+</div></section>
+
+<section id="profile"><div class="wrap">
+<span class="eyebrow">Profile</span>
+<h2>Interested in the engineering behind intelligent software</h2>
+<div class="g">
+<div class="s8" style="padding:0 6px 0 0"><p class="big" style="color:var(--text)">I'm passionate about creating intelligent software that pushes the boundaries of innovation. With a foundation in computer science and data engineering, I'm learning to design and optimize predictive models, LLM integrations, and automated data pipelines — and I like collaborating across teams to turn a user need into an AI feature that feels seamless and efficient.</p></div>
+<div class="card always s4"><div class="word">Always</div><p>learning — new tools, new problems, new ways to ship faster</p></div>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<span class="eyebrow">Skills</span>
+<h2>What I work with</h2>
+<div class="chips top">
+<span class="chip">Python</span><span class="chip">C</span><span class="chip">C++</span><span class="chip">MS Office</span><span class="chip">Data Structures</span><span class="chip">Predictive Modeling</span><span class="chip">LLM Integration</span>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<span class="eyebrow">Projects</span>
+<h2>Work I've built</h2>
+<article class="card project">
+<div class="info">
+<h3>Bill System</h3>
+<p>A billing application built in C during my first semester — covers item entry, price calculation, and generating a clean, itemized bill from structured input.</p>
+<div class="chips"><span class="chip acc">C</span><span class="chip acc">Data Structures</span><span class="chip acc">File Handling</span></div>
+</div>
+<div class="term" aria-hidden="true">
+<div class="dots"><i></i><i></i><i></i></div>
+<pre>$ ./bill_system
+
+  BILLING SYSTEM
+  --------------
+  1. Add item
+  2. View bill
+  3. Calculate total
+  4. Print receipt
+  0. Exit
+
+  Enter choice: _</pre>
+</div>
+</article>
+</div></section>
+
+<section id="education"><div class="wrap">
+<span class="eyebrow">Education</span>
+<h2>Academic record</h2>
+<div class="card edu"><div class="num">8.61</div><div><h3>Current CGPA</h3><p>Computer Science &amp; Engineering — ongoing</p></div></div>
+<div class="card edu"><div class="num">97.6%</div><div><h3>Higher Secondary Certificate (HSC)</h3><p>586 / 600 marks</p></div></div>
+</div></section>
+
+<section id="contact" style="border-bottom:none"><div class="wrap">
+<span class="eyebrow" style="color:var(--text)">Get in touch</span>
+<div class="cta">
+<h2>Let's build something reliable together.</h2>
+<p>Open to internships, entry-level AI/ML roles, and any team that wants someone who cares about getting the data right.</p>
+<div class="btns">
+<a class="btn w" href="mailto:vishwavs357@gmail.com">Email me</a>
+<a class="btn" href="mailto:vishwavs357@gmail.com">vishwavs357@gmail.com</a>
+</div>
+</div>
+</div></section>
+
+</main>
+<footer><div class="wrap">&copy; 2026 Vishwa Vignesh S. Personal portfolio.</div></footer>
+<script>
+(function(){
+var nav=document.querySelector("nav"),links=[].slice.call(nav.querySelectorAll("a"));
+if(!("IntersectionObserver" in window))return;
+var io=new IntersectionObserver(function(es){es.forEach(function(e){
+if(!e.isIntersecting)return;
+links.forEach(function(a){a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id)})})},{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section").forEach(function(s){io.observe(s)});
+})();
+</script>
+</body>
+</html>
